@@ -8,12 +8,12 @@ fun main(args: Array<String>) {
     var total = scanner.nextInt()
     print("How many round-trip tickets:")
     var round = scanner.nextInt()
-    val ticket = Ticket1(total,round)
+    val ticket = Ticket(total,round)
     ticket.print()
 
 }
 
-class Ticket1(var total:Int,var round:Int){
+class Ticket(var total:Int,var round:Int){
     var totalval:Double = (total-round)*1000+round*2000*0.9
     fun print(){
         println("Total ticket:$total"+"\n"+"Round-trip:$round"+"\n"+
